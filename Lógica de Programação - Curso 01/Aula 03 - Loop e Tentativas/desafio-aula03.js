@@ -15,22 +15,14 @@ while (countDesc >= 0) {
 let countdown = prompt('Digite um número para uma contagem regressiva:');
 
 while (countdown >= 0) {
-  if (countdown === 0) {
-    alert('Finalizou!');
-    break;
-  }
   alert(countdown);
   countdown--;
 }
 
-let countup = prompt('Digite um número para uma contagem progressiva:');
-let aux = 0;
+let countupMax = prompt('Digite um número para uma contagem progressiva:');
+let countup = 0;
 
-while (aux <= countup) {
-  if (countup === aux) {
-    alert('Finalizou!');
-    break;
-  }
-  alert(aux);
-  aux++;
+while (countup <= countupMax) {
+  alert(countup);
+  countup++;
 }
