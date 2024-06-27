@@ -1,0 +1,68 @@
+1) Espaçamento e margens com Flexbox
+Utilize a propriedade justify-content: space-between; na classe .apresentacao para espaçar a seção de texto e a imagem.
+
+.apresentacao {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10%;
+}
+
+A margem de 10% ao redor do <main> evita que os elementos fiquem colados nas bordas.
+Após salvar, confira no navegador se o layout está de acordo com o design do Figma.
+2) Definindo o tamanho da seção de texto
+1 - No HTML, adicione a classe apresentacao__conteudo à tag <section>:
+
+<section class="apresentacao__conteudo">
+    <!-- Conteúdo da seção -->
+</section>
+
+2 - No CSS, defina a largura da seção usando a propriedade width. O valor da largura deve ser o mesmo encontrado no Figma:
+
+.apresentacao__conteudo {
+    width: 615px;
+}
+
+3) Ajustando tamanhos de títulos e textos
+1 - No HTML, adicione classes específicas para o título e para o texto:
+
+<h1 class="apresentacao__conteudo__titulo">Título</h1>
+<p class="apresentacao__conteudo__texto">Texto</p>
+
+2 - No CSS, ajuste o tamanho da fonte para essas classes. Os valores devem ser os mesmos encontrados no Figma:
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+}
+
+3 - Salve as alterações e confira no navegador se os tamanhos dos textos estão correspondendo ao design do Figma.
+
+4) Importando e aplicando fontes do Google Fonts
+1 - Acesse o Google Fonts, procure pelas fontes "Krona One" e "Montserrat" e selecione os estilos desejados.
+
+2 - Utilize a opção @import para copiar o código de importação fornecido pelo Google Fonts:
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+3 - Cole este código no topo do seu arquivo CSS.
+
+5) Personalizando fontes de títulos e textos
+1 - No arquivo CSS, aplique a fonte "Krona One" ao título:
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+2 - Aplique a fonte "Montserrat" ao texto:
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+3 - Salve as alterações e atualize a página no navegador para ver as fontes aplicadas corretamente.
