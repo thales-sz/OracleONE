@@ -16,8 +16,6 @@ function validateTextAreaInput() {
   if (text.match(regexAccent) !== null) return showErrorMsg('Não é permitido acentuação!');
   if (text.match(regexUppercase) !== null) return showErrorMsg('Não é permitido letras maiúsculas!');
 
-
-  hideErrorMsg();
   return true;
 }
 
@@ -25,6 +23,7 @@ function handleCriptoButtonClick() {
   const isValid = validateTextAreaInput();
 
   if (isValid) {
+    hideErrorMsg();
     const encryptText = encrypt(textAreaInput.value);
     showCryptoMessage(encryptText);
   }
@@ -34,6 +33,7 @@ function handleDescriptoButtonClick() {
   const isValid = validateTextAreaInput();
 
   if (isValid) {
+    hideErrorMsg();
     const decryptText = decrypt(textAreaInput.value);
     showCryptoMessage(decryptText);
   }
