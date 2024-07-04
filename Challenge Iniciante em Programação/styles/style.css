@@ -1,0 +1,150 @@
+:root {
+  --button-cripto-color: #0A3871;
+  --button-descripto-color: #D8DFE8;
+  --page-background-color: #E5E5E5;
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+body {
+  background-color: var(--page-background-color);
+  height: 100vh;
+  display: flex;
+  width: full;
+}
+
+
+.menu__superior {
+  display: flex;
+  width: 15rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 0 0 1rem;
+}
+
+#message__found {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90%;
+}
+
+footer {
+  position: fixed;
+  padding: 0.2rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--button-cripto-color);
+  color: white;
+  text-align: center;
+}
+
+#message__found > p {
+  padding: 0.5rem;
+  font-size: 24px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main__content_bottom__alert__error {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  color: #FF0C00;
+}
+
+.main__content_bottom__alert {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+#codificador {
+  background-color: var(--page-background-color);
+  border: none;
+  width: 42.5rem;
+  height: 30rem;
+  color: black;
+  text-align: start;
+  resize: none;
+  font-size: 24px;
+  color: var(--button-cripto-color);
+}
+
+#codificador::placeholder {
+  font-size: 32px;
+  color: var(--button-cripto-color);
+}
+
+.main__content__bottom__buttons__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5rem;
+}
+
+.aside__content {
+  padding: 2rem;
+}
+
+.aside__contente__response {
+  display: flex;
+  border-radius: 32px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 25rem;
+  height: 100%;
+  gap: 2rem;
+  box-shadow: var(--shadow);
+}
+
+main {
+  display: flex;
+  padding: 2% 0;
+}
+
+button {
+  transition: all .2s ease-in-out;
+  width: 20.5rem;
+  height: 4rem;
+  border-radius: 24px;
+  font-size: 16px;
+  border: 1px solid var(--button-cripto-color);
+  box-shadow: var(--shadow);
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+#button__cripto {
+  background-color: var(--button-cripto-color);
+  color: white;
+}
+
+#button__descripto {
+  background-color: var(--button-descripto-color);
+  color: var(--button-cripto-color);
+}

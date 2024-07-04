@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criptografador</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+  <header class="menu__superior">
+    <img src="./assets/logo.svg" alt="Logo do A de alura" width="32">
+  </header>
+  <main>
+    <section class="main__content">
+      <textarea type="text" name="codificador" id="codificador" placeholder="Digite o seu texto"></textarea>
+      <div class="main__content_bottom__alert__error">
+        <img src="./assets/alert-icon-error.svg" alt="Icone de alerta">
+        <p id="error__display"></p>
+      </div>
+      <section class="main__content__bottom">
+        <div class="main__content_bottom__alert">
+          <img src="./assets/alert-icon.svg" alt="Icone de alerta">
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="main__content__bottom__buttons__container">
+          <button id="button__cripto" type="button" onclick="handleCriptoButtonClick()">Criptografar</button>
+          <button id="button__descripto" type="button" onclick="handleDescriptoButtonClick()">Descriptografar</button>
+        </div>
+      </section>
+    </section>
+    <aside class="aside__content">
+      <section class="aside__contente__response">
+        <div id="no__message__found">
+          <img src="./assets/aside-image.svg" alt="Alerta de que não foram encontradas mensagens" width="336px">
+          <div>
+            <h1>Nenhuma mensagem encontrada</h1>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </div>
+        </div>
+        <div id="message__found">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora illum hic nisi aperiam nemo itaque eveniet quo? Voluptatum, tempore. Illum veniam consectetur perferendis magni possimus amet ut repudiandae, corporis sit.</p>
+          <button type="button" onclick="copyToClipboard()">Copiar</button>
+        </div>
+      </section>
+    </aside>
+  </main>
+  <footer>
+    Thales Souza Chagas - 2024
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
